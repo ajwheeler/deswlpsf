@@ -5,6 +5,9 @@ rho stats for simulated images
 
 1. Simulate images: This will require GalSim, as well as galsim_extra specifically [this fork](https://github.com/ajwheeler/galsim_extra) (which will potentially be merged into galsim_extra soon). Go to `galsim_extra/examples` and run `galsim realistic.yaml`.
 
+2. Edit `copy_hdus_to_sims.py` and change the two relevant directories at the top of the file.  Then run it.  This script will decompress each simulated image, copy the bad_pixel map and weightmap and header information from the its real counterpart, and put it in the `sims` dir.
+
+
 
 More Plots
 ----------
