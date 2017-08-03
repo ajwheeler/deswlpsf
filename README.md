@@ -1,5 +1,10 @@
 DES PSF stuff
 =============
+rho stats for simulated images
+------------------------------
+
+1. Simulate images: This will require GalSim, as well as galsim_extra specifically [this fork](https://github.com/ajwheeler/galsim_extra) (which will potentially be merged into galsim_extra soon). Go to `galsim_extra/examples` and run `galsim realistic.yaml`.
+
 
 More Plots
 ----------
