@@ -17,5 +17,5 @@ To generate plots like these run `python plots.py`.  You'll haev to change the f
 
 TODO:
 - calculate_sims_psf.py
-- plots.py
 - size_mag.py
+- why are the pixel histograms all mismatched?

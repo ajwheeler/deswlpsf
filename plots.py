@@ -1,8 +1,8 @@
-from astropy.io import fits
 import argparse
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 import numpy as np
+from astropy.io import fits
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-o", "--open", action="store_true")
@@ -40,17 +40,18 @@ f, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
 ax1.imshow(realhdus[1].data, cmap='Greys_r', 
            norm=LogNorm(vmax=av+10*sigma, vmin=av))
 
+av = np.average(simhdus[1].data)
 print("simulated image average pixel value: {}".format(av))
-ax2.imshow(simhdus[0].data, cmap='Greys_r',
+ax2.imshow(simhdus[1].data, cmap='Greys_r',
            norm=LogNorm(vmax=av+10*sigma, vmin=av))
 print("writing image.png")
 output("image.png")
 plt.clf()
 
 print("building histogram of pixel values. . .")
-r = (200, 400)
+r = (200, 1200)
 plt.hist(realhdus[1].data.flatten(), range=r, bins=100, label="real", alpha=0.5)
-plt.hist(simhdus[0].data.flatten(), range=r, bins=100, label="simulated", alpha=0.5)
+plt.hist(simhdus[1].data.flatten(), range=r, bins=100, label="simulated", alpha=0.5)
 plt.ylabel("pixels")
 plt.legend(frameon=False)
 print("writing histogram.png")
