@@ -1,7 +1,6 @@
 # copy weightmap and bad-pixel HDUs from real images to simulated ones.
 # (because they were used for the simulations)
 # also copy header entries!
-# also run funzip
 
 import subprocess
 from astropy.io import fits
@@ -17,10 +16,6 @@ print("")
 
 
 for no in [f'{n:02}' for n in range(1,30) if n != 31 and n!= 61]:
-    #decompress with funzip
-    cmd = "funpack " + sim_fn.format(no) + ".fz"
-    subprocess.call(cmd, shell=True)
-    
     #copy hdus and headers
     reals = fits.open(real_fn.format(no))
     reals.verify('fix')
