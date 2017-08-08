@@ -23,9 +23,7 @@ simhdus.verify('silentfix')
 print(simhdus.info())
 
 #zero out infs in sim data
-#print(np.count_nonzero(simhdus[0].data[np.isinf(simhdus[0].data)]))
-#simhdus[0].data[np.isinf(simhdus[0].data)] = 0
-#print(np.count_nonzero(simhdus[0].data[np.isinf(simhdus[0].data)]))
+simhdus[0].data[np.isinf(simhdus[0].data)] = 0.01
 
 print("building image. . .")
 #get average pixel value
