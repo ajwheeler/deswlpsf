@@ -16,9 +16,9 @@ rho stats for simulated images
 
 More Plots
 ----------
-To generate plots like these run `python plots.py`.  You'll have to change the file locations.
-![histogram](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/histogram_example.png "histogram")
-![image](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/image_example.png "image")
+To generate plots like these run `python plots.py`.  You'll have to change the file locations at the top of the file.
+![histogram](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/histogram.png "histogram")
+![image](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/image.png "image")
 
 TODO:
 - size_mag.py
