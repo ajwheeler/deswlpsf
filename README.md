@@ -21,6 +21,6 @@ To generate plots like these run `python plots.py`.  You'll have to change the f
 ![image](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/image_example.png "image")
 
 TODO:
-- calculate_sims_psf.py
 - size_mag.py
-- why are the pixel histograms all mismatched?
+- complete rho_pipeline instructions
+- can I remove any files?
