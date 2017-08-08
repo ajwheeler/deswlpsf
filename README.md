@@ -14,6 +14,9 @@ rho stats for simulated images
 
 4. Run `./rho_pipeline.sh`.  This script runs a few utilities in modified form from https://github.com/rmjarvis/DESWL.
 
+If all went acording to plan, you should now have a couple plots like this one:
+![rho1](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/rho1_all_%5Bb'r'%5D.png "rho1")
+
 More Plots
 ----------
 To generate plots like these run `python plots.py`.  You'll have to change the file locations at the top of the file.
