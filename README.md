@@ -12,7 +12,7 @@ rho stats for simulated images
 
 3. Run `python3 calculate_sims_psf.py` to run sextractor and psfex on each of the sims.
 
-4. Run `./rho_pipeline.sh`.  This script runs a few utilities in modified form from [https://github.com/rmjarvis/DESWL].
+4. Run `./rho_pipeline.sh`.  This script runs a few utilities in modified form from https://github.com/rmjarvis/DESWL.
 
 More Plots
 ----------
