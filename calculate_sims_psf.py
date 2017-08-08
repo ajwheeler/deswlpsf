@@ -18,7 +18,7 @@ for index in [str(i+1).zfill(2) for i in range(nchips)]:
 
     sex_cmd = ("sex "\
             + "-c {config}/psfex.sex "\
-            + "{sims}/{prefix}_{i}.fits'[1]' "\
+            + "{sims}/{prefix}_{i}.fits'[0]' "\
             + "-WEIGHT_IMAGE {sims}/{prefix}_{i}.fits'[2]' "\
             + "-CATALOG_NAME {sims}/{prefix}_{i}_psfcat.fits "\
             + "-PARAMETERS_NAME {config}/psfex.param "\

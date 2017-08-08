@@ -23,8 +23,8 @@ for no in [f'{n:02}' for n in range(1,30) if n != 31 and n!= 61]:
     sims.verify('fix')
     for key in reals[0].header.keys():
         if key in ['DATE-OBS', 'FILTER', 'CCDNUM', 'DETPOS', 'TELRA', 'TELDEC', 'HA']:
-            sims[1].header[key] = reals[0].header[key]
-    hdus = fits.HDUList([sims[1], reals[1], reals[2]])
+            sims[0].header[key] = reals[0].header[key]
+    hdus = fits.HDUList([sims[0], reals[1], reals[2]])
     hdus.verify('fix')
     #save to sims dir
     hdus.writeto(output_fn.format(no), overwrite=True)
