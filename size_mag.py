@@ -33,6 +33,8 @@ for (name, cat, in_locus) in [('real', real_cat, real_in_locus), \
     plt.scatter(x=locus.mag, y=locus.radius, s=1, c='r')
     plt.scatter(x=other.mag, y=other.radius, s=1, c='b')
     plt.ylim((1, 8))
+    plt.xlabel('radius')
+    plt.ylabel('mag')
     plt.savefig(name + "_size_mag.png")
     plt.clf()
 

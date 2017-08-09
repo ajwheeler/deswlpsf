@@ -23,7 +23,10 @@ To generate plots like these run `python plots.py`.  You'll have to change the f
 ![histogram](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/histogram.png "histogram")
 ![image](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/image.png "image")
 
+
+To generate size-magnitude plots like this, use `size_mag.py`. If you want to fit the locus correctly, you may have to adjust some parameters, but it's a simple script.
+![size-mag](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/size_mag.png "size_mag")
+
 TODO:
 - size_mag.py
-- complete rho_pipeline instructions
 - can I remove any files?
