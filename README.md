@@ -25,8 +25,12 @@ To generate plots like these run `python plots.py`.  You'll have to change the f
 
 
 To generate size-magnitude plots like this, use `size_mag.py`. If you want to fit the locus correctly, you may have to adjust some parameters, but it's a simple script.
+`size_mag.py` reads from two catalog files, `real.cat` and `sim.cat`, that you can generate with these comands:
+```
+sex -c size_mag.sex sims/sim_DECam_00241238_01.fits'[0]' -WEIGHT_IMAGE sims/sim_DECam_00241238_01.fits'[2]' -CATALOG_NAME sim.cat
+sex -c size_mag.sex [real image dir]/DECam_00241238_01.fits'[0]' -WEIGHT_IMAGE [real image dir]/DECam_00241238_01.fits'[2]' -CATALOG_NAME real.cat 
+```
 ![size-mag](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/size_mag.png "size_mag")
 
 TODO:
-- size_mag.py
 - can I remove any files?
