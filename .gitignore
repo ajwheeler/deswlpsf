@@ -2,3 +2,5 @@ __pycache__
 .DS_Store
 real.cat
 sim.cat
+real_size_mag.png
+sim_size_mag.png
