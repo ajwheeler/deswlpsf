@@ -17,13 +17,15 @@ rho stats for simulated images
 If all went acording to plan, you should now have a couple plots like this one:
 ![rho1](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/rho1_all_%5Bb'r'%5D.png "rho1")
 
-More Plots
+Pixel value histogram and images
 ----------
 To generate plots like these run `python plots.py`.  You'll have to change the file locations at the top of the file.
 ![histogram](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/histogram.png "histogram")
 ![image](https://raw.githubusercontent.com/ajwheeler/deswlpsf/master/figures/image.png "image")
 
 
+Size magnitude plots
+-----------
 To generate size-magnitude plots like this, use `size_mag.py`. If you want to fit the locus correctly, you may have to adjust some parameters, but it's a simple script.
 `size_mag.py` reads from two catalog files, `real.cat` and `sim.cat`, which you can generate with these comands:
 ```
